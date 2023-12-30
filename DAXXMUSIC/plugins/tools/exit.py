@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from DAXXMUSIC import bot 
+from DAXXMUSIC import app
 
 @app.on_chat_member_updated(filters.chat)
 def member_update_handler(client, update, user):
