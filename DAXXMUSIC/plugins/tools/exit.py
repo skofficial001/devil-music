@@ -1,4 +1,4 @@
-from pyrogram Import Client 
+from pyrogram import Client 
 from pyrogram.types import InlineKeyboard Button, InlineKeyboard Markup 
 from pyrogram import filters 
 from DAXXMUSIC Import bot as app
