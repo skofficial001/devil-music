@@ -248,4 +248,4 @@ HELP_25 = """
 <b><u>ᴇᴠᴀʟ :</b></u>
 Available commands:
 • /eval check code: Check code.
-""""
+"""
