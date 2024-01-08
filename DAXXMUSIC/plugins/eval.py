@@ -7,7 +7,7 @@ import ast
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token="YOUR_BOT_TOKEN")
 
 # Define the list of users who are allowed to use the /eval command
-ALLOWED_USERS = [123456789, 987654321]  # Replace with your user IDs
+ALLOWED_USERS = [6612349547, 6612349547]  # Replace with your user IDs
 
 # Check if the user is allowed to use the /eval command
 def is_allowed(user_id):
