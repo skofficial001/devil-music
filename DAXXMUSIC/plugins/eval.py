@@ -43,6 +43,3 @@ async def eval_command(client, message: Message):
         # If an exception occurs, send the traceback to the user
         traceback_text = traceback.format_exc()
         await message.reply_text(f"Error:\n```\n{traceback_text}\n```")
-
-# Start the bot
-app.run()
