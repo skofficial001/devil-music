@@ -244,3 +244,8 @@ Available commands:
 Example:
 /google pyrogram: return top 5 reuslts.
 """
+HELP_25 = """
+<b><u>ᴇᴠᴀʟ :</b></u>
+Available commands:
+• /eval check code: Check code.
+""""
