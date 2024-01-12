@@ -14,9 +14,9 @@ BOT_TOKEN = getenv("BOT_TOKEN","6522822140:AAEmMPj-0uffr0VdKcptvuYUZhVVkfKnYW8")
 # Add Owner Username without @ 
 OWNER_USERNAME = getenv("OWNER_USERNAME","ToXiC_BoY_OFFICIAL")
 # Get Your bot username
-BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_BOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_MUSIC_BOT")
 # Don't Add style font 
-BOT_NAME = getenv("BOT_NAME" , "SANKI_MUSIC_BOT")
+BOT_NAME = getenv("BOT_NAME" , "SANKI XD")
 #get Your Assistant User name
 ASSUSERNAME = getenv("ASSUSERNAME" , "SMILE_GIRL_ASSISTANT")
 EVALOP = list(map(int, getenv("EVALOP", "6612349547").split()))
