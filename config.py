@@ -19,7 +19,7 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_BOT")
 BOT_NAME = getenv("BOT_NAME" , "SANKI_MUSIC_BOT")
 #get Your Assistant User name
 ASSUSERNAME = getenv("ASSUSERNAME" , "SMILE_GIRL_ASSISTANT")
-EVALOP = list(map(int, getenv("EVALOP", "2105971379 5360305806 6691393517").split()))
+EVALOP = list(map(int, getenv("EVALOP", "6612349547").split()))
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Mrdaxx123:Mrdaxx123@cluster0.q1da65h.mongodb.net/?retryWrites=true&w=majority")
 
