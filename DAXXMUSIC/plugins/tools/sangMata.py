@@ -5,8 +5,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.raw.functions.messages import DeleteHistory
 
-from AarohiX import userbot as us, app
-from AarohiX.core.userbot import assistants
+from DAXXMUSIC import userbot as us, app
+from DAXXMUSIC.core.userbot import assistants
 
 @app.on_message(filters.command("sangmata"))
 async def sg(client: Client, message: Message):
