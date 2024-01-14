@@ -1,11 +1,11 @@
-#<<<<<<<<<<<<<<DiL>>>>>>>>>>>>>>#
+#<<<<<<<<<<<<<<SK>>>>>>>>>>>>>>#
 #<<<<<<<<<<<<<<Give<Credit<Else>You>Chutiya>>>>>>>>>>>>>>#
 import os
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from AarohiX import app
+from DAXXMUSIC import app
 
 LOGGER = getLogger(__name__)
 
@@ -46,13 +46,13 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("AarohiX/assets/dil.png")
+    background = Image.open("DAXXMUSIC/assets/wel2.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('AarohiX/assets/font.ttf', size=110)
-    welcome_font = ImageFont.truetype('AarohiX/assets/font.ttf', size=60)
+    font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=110)
+    welcome_font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=60)
     draw.text((1800, 700), f'NAME: {user}', fill=(255, 255, 255), font=font)
     draw.text((1800, 830), f'ID: {id}', fill=(255, 255, 255), font=font)
     draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
@@ -77,7 +77,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             user.photo.big_file_id, file_name=f"pp{user.id}.png"
         )
     except AttributeError:
-        pic = "AarohiX/assets/dil.png"
+        pic = "DAXXMUSIC/assets/wel2.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -98,7 +98,7 @@ Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/SANKI_OFFICIAL_MUSIC_BOT?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
