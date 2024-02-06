@@ -31,7 +31,7 @@ def mood_command(client, message):
         mood_percentage = random.randint(10, 100)
         mood_message = get_random_message(mood_percentage)
 
-        response = f"{name1}💀 = {mood_percentage}%"
+        response = f"{name1}💀 = {mood_percentage}%\n\n{mood_message}"
     else:
         response = "Please enter your name after /mood command."
     app.send_message(message.chat.id, response)
