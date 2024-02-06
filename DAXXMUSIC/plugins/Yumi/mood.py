@@ -23,7 +23,7 @@ def get_random_message(mood_percentage):
         ])
         
 @app.on_message(filters.command("mood", prefixes="/"))
-def love_command(client, message):
+def mood_command(client, message):
     command, *args = message.text.split(" ")
     if len(args) >= 2:
         name1 = args[0].strip()
