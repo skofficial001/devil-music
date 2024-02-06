@@ -25,7 +25,7 @@ def get_random_message(mood_percentage):
 @app.on_message(filters.command("mood", prefixes="/"))
 def mood_command(client, message):
     command, *args = message.text.split(" ")
-    if len(args) >= 2:
+    if len(args) >= 1:
         name1 = args[0].strip()
         
         mood_percentage = random.randint(10, 100)
