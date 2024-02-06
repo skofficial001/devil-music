@@ -2,37 +2,36 @@ from pyrogram import Client, filters
 import random
 from DAXXMUSIC import app
 
-def get_random_message(love_percentage):
-    if love_percentage <= 30:
+def get_random_message(mood_percentage):
+    if mood_percentage <= 30:
         return random.choice([
-            "Love is in the air but needs a little spark.",
-            "A good start but there's room to grow.",
-            "It's just the beginning of something beautiful."
+            "you are little bit happy😕",
+            "what's with wrong you why you are sad🙁",
+            "what's happened buddy why are you sad😟"
         ])
-    elif love_percentage <= 70:
+    elif mood_percentage <= 70:
         return random.choice([
-            "A strong connection is there. Keep nurturing it.",
-            "You've got a good chance. Work on it.",
-            "Love is blossoming, keep going."
+            "😲wow your mood is happy",
+            "hste rho ese hi hste hue aap bhut ache lgte ho☺",
+            "I like it your Happiness😊"
         ])
     else:
         return random.choice([
-            "Wow! It's a match made in heaven!",
-            "Perfect match! Cherish this bond.",
-            "Destined to be together. Congratulations!"
+            "Wow! your mood is oky😄",
+            "Think and live positive😄😊",
+            "me bgwan se yhi dua krti hu apka mood hmesa happy rhe😊"
         ])
         
-@app.on_message(filters.command("love", prefixes="/"))
+@app.on_message(filters.command("mood", prefixes="/"))
 def love_command(client, message):
     command, *args = message.text.split(" ")
     if len(args) >= 2:
         name1 = args[0].strip()
-        name2 = args[1].strip()
         
-        love_percentage = random.randint(10, 100)
-        love_message = get_random_message(love_percentage)
+        mood_percentage = random.randint(10, 100)
+        mood_message = get_random_message(mood_percentage)
 
-        response = f"{name1}💕 + {name2}💕 = {love_percentage}%\n\n{love_message}"
+        response = f"{name1}💀 = {mood_percentage}%"
     else:
-        response = "Please enter two names after /love command."
+        response = "Please enter your name after /mood command."
     app.send_message(message.chat.id, response)
