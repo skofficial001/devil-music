@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from AarohiX import app
-from AarohiX.core.call import Aarohi, autoend
-from AarohiX.utils.database import (get_client, is_active_chat,
+from DAXXMUSIC import app
+from DAXXMUSIC.core.call import Aarohi, autoend
+from DAXXMUSIC.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -28,9 +28,9 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1001686672798
-                                and chat_id != -1001840101403
-                                and chat_id != -1001549206010
+                                and chat_id != -1002018784162
+                                and chat_id != -1002018784162
+                                and chat_id != -1002018784162
                             ):
                                 if not await is_active_chat(chat_id):
                                     try:
