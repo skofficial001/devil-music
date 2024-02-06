@@ -3,7 +3,7 @@ from datetime import datetime
 
 import config
 from DAXXMUSIC import app
-from DAXXMUSIC.core.call import Aarohi, autoend
+from DAXXMUSIC.core.call import DAXX, autoend
 from DAXXMUSIC.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
