@@ -12,7 +12,7 @@ API_HASH = getenv("API_HASH","a95990848f2b93b8131a4a7491d97092")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN","6522822140:AAEmMPj-0uffr0VdKcptvuYUZhVVkfKnYW8")
 # Add Owner Username without @ 
-OWNER_USERNAME = getenv("OWNER_USERNAME","ToXiC_BoY_OFFICIAL")
+OWNER_USERNAME = getenv("OWNER_USERNAME","devil_rajput_01")
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , "SANKI_OFFICIAL_MUSIC_BOT")
 # Don't Add style font 
